@@ -26,8 +26,8 @@ public class SuperClass {
             }
             streetPerPaths.add(streetPerPath);
         }
-        
-        
+        // TODO: 3. car order
+        // TODO: 2. current state and time ticking
         for(List<Street> streets: streetPerPaths){
             int totalTime = 0;
             for(Street street: streets){
@@ -45,6 +45,7 @@ public class SuperClass {
                 new Schedule(0, 1, Map.of("rue-de-londres", 2)), new Schedule(2, 1, Map.of("rue-de-moscou", 1))));
     }
 
+    // TODO: 1. uztaisīt funkcijas ar ielām
     private Boolean isGreen(int time, int intersect, String street) {
         if (street.equals("amsterdam")) {
             return (time % 2) < 1;
